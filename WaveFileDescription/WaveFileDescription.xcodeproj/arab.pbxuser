@@ -1,0 +1,59 @@
+// !$*UTF8*$!
+{
+	1D6058900D05DD3D006BFB54 /* WaveFileDescription */ = {
+		activeExec = 0;
+		executables = (
+			A2EA52BF11C3B26900088BE1 /* WaveFileDescription */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = A2EA52BF11C3B26900088BE1 /* WaveFileDescription */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* WaveFileDescription */;
+		codeSenseManager = A2EA52CF11C3B28700088BE1 /* Code sense */;
+		executables = (
+			A2EA52BF11C3B26900088BE1 /* WaveFileDescription */,
+		);
+		perUserDictionary = {
+			PBXPerProjectTemplateStateSaveDate = 298037865;
+			PBXWorkspaceStateSaveDate = 298037865;
+		};
+		sourceControlManager = A2EA52CE11C3B28700088BE1 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	A2EA52BF11C3B26900088BE1 /* WaveFileDescription */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = WaveFileDescription;
+		sourceDirectories = (
+		);
+	};
+	A2EA52CE11C3B28700088BE1 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	A2EA52CF11C3B28700088BE1 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+}
