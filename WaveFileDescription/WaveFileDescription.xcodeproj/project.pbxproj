@@ -15,6 +15,10 @@
 		2899E5220DE3E06400AC0155 /* WaveFileDescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* WaveFileDescriptionViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* WaveFileDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* WaveFileDescriptionViewController.m */; };
+		A2EA52D311C3B56800088BE1 /* InMemoryAudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EA52D111C3B56800088BE1 /* InMemoryAudioFile.m */; };
+		A2EA52D611C3B77B00088BE1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2EA52D511C3B77B00088BE1 /* AudioToolbox.framework */; };
+		A2EA52DC11C3B88200088BE1 /* WaveFileDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EA52DB11C3B88200088BE1 /* WaveFileDescription.m */; };
+		A2EA530511C3C46E00088BE1 /* sampleOne.wav in Resources */ = {isa = PBXBuildFile; fileRef = A2EA530411C3C46E00088BE1 /* sampleOne.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,12 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* WaveFileDescription_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveFileDescription_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* WaveFileDescription-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WaveFileDescription-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		A2EA52D111C3B56800088BE1 /* InMemoryAudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InMemoryAudioFile.m; sourceTree = "<group>"; };
+		A2EA52D211C3B56800088BE1 /* InMemoryAudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InMemoryAudioFile.h; sourceTree = "<group>"; };
+		A2EA52D511C3B77B00088BE1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A2EA52DA11C3B88200088BE1 /* WaveFileDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveFileDescription.h; sourceTree = "<group>"; };
+		A2EA52DB11C3B88200088BE1 /* WaveFileDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveFileDescription.m; sourceTree = "<group>"; };
+		A2EA530411C3C46E00088BE1 /* sampleOne.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sampleOne.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +51,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				A2EA52D611C3B77B00088BE1 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,10 +61,14 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A2EA52D211C3B56800088BE1 /* InMemoryAudioFile.h */,
+				A2EA52D111C3B56800088BE1 /* InMemoryAudioFile.m */,
 				1D3623240D0F684500981E51 /* WaveFileDescriptionAppDelegate.h */,
 				1D3623250D0F684500981E51 /* WaveFileDescriptionAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* WaveFileDescriptionViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* WaveFileDescriptionViewController.m */,
+				A2EA52DA11C3B88200088BE1 /* WaveFileDescription.h */,
+				A2EA52DB11C3B88200088BE1 /* WaveFileDescription.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -90,6 +105,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A2EA530411C3C46E00088BE1 /* sampleOne.wav */,
 				2899E5210DE3E06400AC0155 /* WaveFileDescriptionViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* WaveFileDescription-Info.plist */,
@@ -100,6 +116,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A2EA52D511C3B77B00088BE1 /* AudioToolbox.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
@@ -151,6 +168,7 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* WaveFileDescriptionViewController.xib in Resources */,
+				A2EA530511C3C46E00088BE1 /* sampleOne.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +182,8 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* WaveFileDescriptionAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* WaveFileDescriptionViewController.m in Sources */,
+				A2EA52D311C3B56800088BE1 /* InMemoryAudioFile.m in Sources */,
+				A2EA52DC11C3B88200088BE1 /* WaveFileDescription.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +225,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.1.3;
+				SDKROOT = iphoneos3.0;
 			};
 			name = Debug;
 		};
@@ -218,7 +238,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.1.3;
+				SDKROOT = iphoneos3.0;
 			};
 			name = Release;
 		};

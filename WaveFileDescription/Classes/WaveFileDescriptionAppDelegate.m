@@ -8,6 +8,7 @@
 
 #import "WaveFileDescriptionAppDelegate.h"
 #import "WaveFileDescriptionViewController.h"
+#import "WaveFileDescription.h"
 
 @implementation WaveFileDescriptionAppDelegate
 
@@ -17,6 +18,11 @@
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
     
+	NSString *filePath = [[NSBundle mainBundle] pathForResource:@"sampleOne" ofType:@"wav"];
+
+	WaveFileDescription *waveFileDescription = [[WaveFileDescription alloc] init];
+	[waveFileDescription getDetails:filePath];
+	
     // Override point for customization after app launch    
     [window addSubview:viewController.view];
     [window makeKeyAndVisible];
